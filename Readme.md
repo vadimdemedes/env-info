@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/vdemedes/env-info.svg?branch=master)](https://travis-ci.org/vdemedes/env-info) [![Coverage Status](https://coveralls.io/repos/vdemedes/env-info/badge.svg?branch=master&service=github)](https://coveralls.io/github/vdemedes/env-info?branch=master)
 
-Get environment information (node + browser).
+Get environment information (Node.js + browser).
 
 
 ## Installation
@@ -23,7 +23,7 @@ var info = envInfo();
 /*
 {
 	"runtime": {
-		"name": "node",
+		"name": "Node.js",
 		"version": "4.2.6"
 	},
 	"os": {
