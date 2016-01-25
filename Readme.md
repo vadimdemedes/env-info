@@ -40,7 +40,7 @@ var info = envInfo();
 		"version": "538"
 	},
 	"os": {
-		"name": "MacOS"
+		"name": "OS X"
 	}
 }
 */
