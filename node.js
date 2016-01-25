@@ -14,7 +14,7 @@ var osName = require('os-name');
 function envInfo () {
 	return {
 		runtime: {
-			name: process.release.name,
+			name: 'Node.js',
 			version: process.version
 		},
 		os: {

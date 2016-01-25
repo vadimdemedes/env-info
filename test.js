@@ -40,7 +40,7 @@ if (isNode()) {
 
 		t.same(env, {
 			runtime: {
-				name: process.release.name,
+				name: 'Node.js',
 				version: process.version
 			},
 			os: {
