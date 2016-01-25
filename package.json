@@ -1,0 +1,43 @@
+{
+  "name": "env-info",
+  "version": "1.0.0",
+  "description": "Get environment info (node + browser)",
+  "license": "MIT",
+  "repository": "vdemedes/env-info",
+  "author": {
+    "name": "Vadim Demedes",
+    "email": "vdemedes@gmail.com",
+    "url": "https://github.com/vdemedes"
+  },
+  "scripts": {
+    "test": "xo && nyc tape",
+    "test-browser": "xo && browserify test.js | testling",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "main": "node.js",
+  "browser": "browser.js",
+  "files": [
+    "browser.js",
+    "node.js"
+  ],
+  "xo": {
+    "extends": "vdemedes",
+    "env": [
+      "node",
+      "browser"
+    ]
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "coveralls": "^2.11.6",
+    "eslint-config-vdemedes": "^1.0.2",
+    "nyc": "^5.3.0",
+    "tape": "^4.4.0",
+    "testling": "^1.7.1",
+    "xo": "^0.12.1"
+  },
+  "dependencies": {
+    "browser-info": "0.0.3",
+    "os-name": "^1.0.3"
+  }
+}
