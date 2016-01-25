@@ -17,13 +17,15 @@ if (isBrowser()) {
 		var browser = require('browser-info')();
 		var env = envInfo();
 
+		var osName = env.os.name === 'MacOS' ? 'OS X' : env.os.name;
+
 		t.same(env, {
 			runtime: {
 				name: browser.name,
 				version: browser.version
 			},
 			os: {
-				name: browser.os
+				name: osName
 			}
 		});
 

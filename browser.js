@@ -13,6 +13,11 @@ var browserInfo = require('browser-info');
 
 function envInfo () {
 	var browser = browserInfo();
+	var osName = browser.os;
+
+	if (osName === 'MacOS') {
+		osName = 'OS X';
+	}
 
 	return {
 		runtime: {
@@ -20,7 +25,7 @@ function envInfo () {
 			version: browser.version
 		},
 		os: {
-			name: browser.os
+			name: osName
 		}
 	};
 }
