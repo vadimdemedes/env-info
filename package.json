@@ -10,7 +10,7 @@
     "url": "https://github.com/vdemedes"
   },
   "scripts": {
-    "test": "xo && nyc tape",
+    "test": "xo && nyc node test.js",
     "test-browser": "xo && browserify test.js | testling",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
